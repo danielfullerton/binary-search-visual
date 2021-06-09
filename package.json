@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start:dev": "webpack-dev-server",
-    "start": "./node_modules/serve/bin/serve.js -p 8080"
+    "start": "./node_modules/serve/bin/serve.js -p $PORT"
   },
   "author": "",
   "license": "ISC",

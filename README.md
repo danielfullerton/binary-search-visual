@@ -11,13 +11,13 @@ $ webpack
 ```
 
 ```
-// Builds the Docker image
-docker build -t dffull0245/bs .
+// Builds the Docker image (PORT will specify on which port within the container you want the static web server to run)
+docker build --build-arg PORT=8080 -t dffull0245/bs .
 ```
 ### Running the image
-Use the following command to start the application on port 8080 on your machine:
+Use the following command to start the application on your machine (replace [PORT] with your desired port number):
 ```
-docker run -p 8080:8080 dffull0245/bs
+docker run -p [PORT]:8080 dffull0245/bs
 ```
 
 # GitHub

@@ -1,7 +1,9 @@
 FROM node:alpine
+ARG PORT
+ENV PORT=$PORT
 WORKDIR /
 COPY ./ ./
 
 # run
-EXPOSE 8080
+EXPOSE $PORT
 CMD ["npm", "start"]
