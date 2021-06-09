@@ -41,10 +41,9 @@ const binarySearch = (start, end) => {
 
 const search = () => {
     reset();
-    activeIndex = -1;
     const searchInput = searchInputTarget() as HTMLInputElement;
     target = Number.parseInt(searchInput.value);
-    if (!target || target < 0 || target > 20) {
+    if (!target || target < 0 || target > 19) {
         return;
     }
 
